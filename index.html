@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="styles/bootstrap.min.css" />
         <!--Дополнительные стили подключать после bootstrap-->
         <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/preferences.css" />
+        <link rel="stylesheet" href="styles/product.css" />
         <link rel="stylesheet" href="styles/magnetic-wheel.css" />
         <link
             rel="shortcut icon"
@@ -28,7 +30,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#about">
+                    <a class="navbar-brand" href="#product">
                         <img
                             src="images/logos/EJFOLTlogo-white.svg"
                             alt="Logo"
@@ -42,7 +44,7 @@
                         class="collapse navbar-collapse"
                         id="navbarSupportedContent"
                     >
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                             <li class="nav-item">
                                 <a class="nav-link" href="#preferences"
                                     >Преимущества</a
@@ -84,59 +86,28 @@
             </nav>
         </header>
 
-        <section class="about bg-light" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="text-center color1 mb-5">ШВП-Манипулятор</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 description p-5">
-                            <p>
-                                &laquo;ШВП-Манипулятор&raquo;&nbsp;&mdash;
-                                устройство для точного и&nbsp;надежного
-                                манипулирования в&nbsp;различных областях
-                                применения. Оснащенный высокоточной
-                                шариковинтовой передачей, данное техническое
-                                решение обеспечивает непревзойденную точность
-                                перемещений и&nbsp;стабильно высокую
-                                производительность в&nbsp;задачах автоматизации
-                                и&nbsp;обработки материалов.
-                            </p>
-                            <p>
-                                Данное техническое решение предназначено для
-                                выполнения сложных манипуляций, требующих
-                                высокой точности и&nbsp;надежности.
-                                Он&nbsp;может использоваться для работы
-                                в&nbsp;автоматизированных производственных
-                                линиях, в&nbsp;системах сборки и&nbsp;упаковки,
-                                а&nbsp;также в&nbsp;лабораториях
-                                и&nbsp;исследовательских центрах. Шариковинтовая
-                                передача обеспечивает стабильное движение
-                                и&nbsp;высокую нагрузочную способность, что
-                                делает манипулятор идеальным выбором для работы
-                                с&nbsp;тяжелыми и&nbsp;габаритными объектами.
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <img
-                                src="/images/main-image/manipulator.png"
-                                alt="Манипулятор"
-                                class="img-fluid"
-                            />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <a
-                                href=""
-                                class="btn-lg text-uppercase btn-forwhom text-center"
-                                data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop"
-                                >Узнать&nbsp;больше</a
-                            >
-                        </div>
-                    </div>
+        <!--О проекте-->
+        <section class="bg-white" id="product">
+            <div class="position-relative overflow-hidden text-center bg-light">
+                <div class="col-md-8 p-lg-5 mx-auto my-5">
+                    <h1 class="display-4 fw-normal p-5">Манипулятор ШВП</h1>
+                    <img
+                        src="images/main-image/manipulator.png"
+                        alt="Манипулятор"
+                        class="img-fluid"
+                    />
+                    <p class="lead">
+                        Устройство, оснащенное шариковинтовой передачей,
+                        обеспечивает непревзойденную точность перемещений и
+                        стабильно высокую производительность в&nbsp;задачах
+                        автоматизации и&nbsp;обработки материалов.
+                    </p>
+                    <a
+                        class="btn btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        >Узнать больше</a
+                    >
                 </div>
             </div>
         </section>
@@ -144,7 +115,7 @@
         <!--Услуги-->
 
         <!--Преимущества-->
-        <section class="preferences bg-white" id="preferences">
+        <section class="bg-white p-5" id="preferences">
             <div class="container">
                 <div class="row featurette">
                     <div class="col-md-7">
@@ -626,7 +597,7 @@
                             <label class="form-check-label" for="checkAgree">
                                 Отправляя данную форму я даю согласие на
                                 обработку персональных данный в соответсвии с
-                                <a href=""
+                                <a href="privacy.html"
                                     >Политикой обработки персональных данных</a
                                 >
                             </label>
@@ -646,7 +617,12 @@
                         >
                             Закрыть
                         </button>
-                        <button type="button" class="btn btn-primary">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                        >
                             Получить ответ
                         </button>
                     </div>
