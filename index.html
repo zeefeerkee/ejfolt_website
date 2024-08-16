@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://smartcaptcha.yandexcloud.net/captcha.js"
+            defer
+        ></script>
+        <!--Стили-->
+        <link rel="stylesheet" href="styles/bootstrap.min.css" />
+        <!--Дополнительные стили подключать после bootstrap-->
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/magnetic-wheel.css" />
+        <link
+            rel="shortcut icon"
+            href="images/logos/EJFOLTlogo-black.svg"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+        />
+
+        <title>ШВП-Манипулятор</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#about">
+                        <img
+                            src="images/logos/EJFOLTlogo-white.svg"
+                            alt="Logo"
+                            width="30"
+                            height="24"
+                            class="d-inline-block align-text-bottom"
+                        />
+                        Эйфолт
+                    </a>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#preferences"
+                                    >Преимущества</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team"
+                                    >Команда проекта</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="fasie_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#contractModal"
+                    >
+                        <img
+                            src="images/logos/footer_logo_fasie.png"
+                            height="40px"
+                            alt="Логотип фонда содействия инновациям"
+                        />
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Переключатель навигации"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="about bg-light" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center color1 mb-5">ШВП-Манипулятор</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 description p-5">
+                            <p>
+                                &laquo;ШВП-Манипулятор&raquo;&nbsp;&mdash;
+                                устройство для точного и&nbsp;надежного
+                                манипулирования в&nbsp;различных областях
+                                применения. Оснащенный высокоточной
+                                шариковинтовой передачей, данное техническое
+                                решение обеспечивает непревзойденную точность
+                                перемещений и&nbsp;стабильно высокую
+                                производительность в&nbsp;задачах автоматизации
+                                и&nbsp;обработки материалов.
+                            </p>
+                            <p>
+                                Данное техническое решение предназначено для
+                                выполнения сложных манипуляций, требующих
+                                высокой точности и&nbsp;надежности.
+                                Он&nbsp;может использоваться для работы
+                                в&nbsp;автоматизированных производственных
+                                линиях, в&nbsp;системах сборки и&nbsp;упаковки,
+                                а&nbsp;также в&nbsp;лабораториях
+                                и&nbsp;исследовательских центрах. Шариковинтовая
+                                передача обеспечивает стабильное движение
+                                и&nbsp;высокую нагрузочную способность, что
+                                делает манипулятор идеальным выбором для работы
+                                с&nbsp;тяжелыми и&nbsp;габаритными объектами.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img
+                                src="/images/main-image/manipulator.png"
+                                alt="Манипулятор"
+                                class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a
+                                href=""
+                                class="btn-lg text-uppercase btn-forwhom text-center"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                                >Узнать&nbsp;больше</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Услуги-->
+
+        <!--Преимущества-->
+        <section class="preferences bg-white" id="preferences">
+            <div class="container">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">
+                            Позиционирование,
+                            <span class="text-muted"
+                                >непревзойдённая точность.</span
+                            >
+                        </h2>
+                        <p class="lead">
+                            Шариковинтовая передача в связке с шаговыми моторами
+                            обеспечивает исключительную точность перемещений,
+                            что делает данный манипулятор идеальным для задач,
+                            требующих высокой точности, таких как микрообработка
+                            и сборка компонентов.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img
+                            class="featurette-image img-fluid mx-auto"
+                            src="images/preferences/preferences-1.png"
+                            width="500"
+                            height="500"
+                        />
+                    </div>
+                </div>
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">
+                            Высокая нагрузочная способность,
+                            <span class="text-muted"
+                                >работа с тяжёлыми объектами.</span
+                            >
+                        </h2>
+                        <p class="lead">
+                            Манипулятор способен работать с большими и тяжёлыми
+                            объектами благодаря прочной конструкции и высокой
+                            нагрузочной способности шариковинтовой передачи, что
+                            позволяет его использовать в различных областях
+                            промышленности.
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img
+                            class="featurette-image img-fluid mx-auto"
+                            src="images/preferences/preferences-3.png"
+                            width="500"
+                            height="500"
+                        />
+                    </div>
+                </div>
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">
+                            Долговечность и надёжность,
+                            <span class="text-muted"
+                                >минимум обслуживания.</span
+                            >
+                        </h2>
+                        <p class="lead">
+                            Шариковинтовая передача снижает износ и
+                            необходимость в частом обслуживании, благодаря чему
+                            данное техническое решение отличается высокой
+                            долговечностью и надёжностью в эксплуатации.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img
+                            class="featurette-image img-fluid mx-auto"
+                            src="images/preferences/preferences-2.png"
+                            width="500"
+                            height="500"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Для кого это техническое решение-->
+        <section class="forwhom bg-light">
+            <div class="container">
+                <h2 class="text-center color2 mb-5">
+                    Для кого это техническое решение?
+                </h2>
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h5 class="text-center">
+                            Резервуары и&nbsp;трубопроводы нефтегазовых компаний
+                        </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-center">
+                            Теплообменные аппараты и&nbsp;хранилища химических
+                            предприятий.
+                        </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-center">
+                            Машины и&nbsp;аппараты теплоснабжающих компаний.
+                        </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-center">
+                            Аппараты и&nbsp;устройства атомной энергетики.
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a
+                            href=""
+                            class="btn-lg text-uppercase btn-forwhom text-center"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                            >Узнать&nbsp;больше</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Команда проекта-->
+        <section class="team bg-light" id="team">
+            <div class="container">
+                <div class="row">
+                    <h2 class="color2 mb-5 text-center">Команда проекта</h2>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card teammate" style="width: 18rem">
+                            <img
+                                src="https://sun6-20.userapi.com/s/v1/ig2/kdmChLwZyXjVZgNwvHqo-uoNltTmYEuyai3TaSXXxNZNPi3hPQohyJlnlbXgV7rPaCv3Is8SBCY18-c30XQbbqeH.jpg?quality=95&crop=1051,1059,479,479&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&ava=1&u=Sj5_jCXiMw09uQJ9vROWwoag0npd8sbaLZA6MlviDeY&cs=200x200"
+                                class="card-img-top"
+                                alt="Фото Максима Шестакова"
+                            />
+                            <div class="card-body">
+                                <h5 class="mb-0">Шестаков Максим</h5>
+                                <ul>
+                                    <li>
+                                        <i>Директор</i>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:belobov.filipp@zeefy.ru"
+                                            ><i
+                                                class="bi bi-envelope-at-fill"
+                                            ></i
+                                            >&nbsp;belobov.filipp@zeefy.ru</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="https://t.me/zeefeerkee"
+                                            ><i class="bi bi-telegram"></i
+                                            >&nbsp;@zeefeerkee</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card teammate" style="width: 18rem">
+                            <img
+                                src="https://sun9-5.userapi.com/impg/Dsm5Ni1LM7VtEt3mIGga3X6xIaIQCXVp1IOZOQ/qgk_PyMUJu8.jpg?size=1000x1000&quality=96&sign=8b36eaee52b31d0cb9708915da76c9f6&type=album"
+                                class="card-img-top"
+                                alt="Фото Белобородова Филиппа>"
+                            />
+                            <div class="card-body">
+                                <h5 class="mb-0">Белобородов Филипп</h5>
+                                <ul>
+                                    <li>
+                                        <i>Инженер-программист</i>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:belobov.filipp@zeefy.ru"
+                                            ><i
+                                                class="bi bi-envelope-at-fill"
+                                            ></i
+                                            >&nbsp;belobov.filipp@zeefy.ru</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="https://t.me/zeefeerkee"
+                                            ><i class="bi bi-telegram"></i
+                                            >&nbsp;@zeefeerkee</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card teammate" style="width: 18rem">
+                            <img
+                                src="https://sun6-21.userapi.com/s/v1/if1/uxKgVz3CDJxbo8bLIvK8_fBTRyKN2vG5v9LRFBza9XaLKohCtQTgMBxdc_Oc1FuTT0p_zqoq.jpg?size=100x100&quality=96&crop=529,5,550,550&ava=1"
+                                class="card-img-top"
+                                alt="Фото Гилязетдинова Даниила"
+                            />
+                            <div class="card-body">
+                                <h5 class="mb-0">Гилязетдинов Даниил</h5>
+                                <ul>
+                                    <li>
+                                        <i>Инженер-конструктор</i>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:belobov.filipp@zeefy.ru"
+                                            ><i
+                                                class="bi bi-envelope-at-fill"
+                                            ></i
+                                            >&nbsp;belobov.filipp@zeefy.ru</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="https://t.me/zeefeerkee"
+                                            ><i class="bi bi-telegram"></i
+                                            >&nbsp;@zeefeerkee</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card teammate" style="width: 18rem">
+                            <img
+                                src="https://pp.userapi.com/dfvmQ4fDCgEfMVVLlOKBUsaUdh7QZww8ME4IHg/2G-nzM7_pH4.png"
+                                class="card-img-top"
+                                alt="Фото Гумарова Эльдара"
+                            />
+                            <div class="card-body">
+                                <h5 class="mb-0">Эльдаров Гумар</h5>
+                                <ul>
+                                    <li>
+                                        <i>Инженер-технолог</i>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:belobov.filipp@zeefy.ru"
+                                            ><i
+                                                class="bi bi-envelope-at-fill"
+                                            ></i
+                                            >&nbsp;belobov.filipp@zeefy.ru</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="https://t.me/zeefeerkee"
+                                            ><i class="bi bi-telegram"></i
+                                            >&nbsp;@zeefeerkee</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Галерея-->
+
+        <footer id="footer">
+            <div class="container">
+                <!--Контакты-->
+                <div class="row mb-5 contacts">
+                    <div class="col-xl-6 col-md-12 text-cente">
+                        <h2 class="text-center color2 mb-4 text-uppercase">
+                            к о н т а к т ы
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="tel:+796117577490"
+                                    >+7 961 175 774 90</a
+                                >
+                                <a href="mailto:info@gekkon.ru"
+                                    >info@gekkon.ru</a
+                                >
+                            </li>
+                            <li>
+                                <div class="adress">
+                                    <p><strong>Россия</strong></p>
+                                    <p>
+                                        Пермский край, город Пермь, улица
+                                        Дзержинского 50, офис 302
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-md-12 text-center">
+                        <!--Карта-->
+                        <div class="map">
+                            <iframe
+                                class="rounded"
+                                alt="Карта"
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A306b10e4aa385d1eaba272ca023750e9b2fa1b9e7b06ec3872c1540137ffa118&amp;source=constructor"
+                                width="380"
+                                height="320"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row donation">
+                    <div class="col text-center">
+                        <iframe
+                            src="https://yoomoney.ru/quickpay/fundraise/button?billNumber=147LG0HTHBO.240726&"
+                            width="330"
+                            height="50"
+                            frameborder="0"
+                            allowtransparency="true"
+                            scrolling="no"
+                        ></iframe>
+                    </div>
+                </div>
+
+                <!--Партнёры-->
+                <div class="row partners mb-5">
+                    <div class="col text-center">
+                        <a href="">
+                            <img
+                                src="images/logos/main-icon-white.svg"
+                                height="100px"
+                                alt="Фонд содействия инновациям"
+                            />
+                        </a>
+                    </div>
+                    <div class="col text-center logo-fasie">
+                        <a href="">
+                            <img
+                                src="images/logos/FASIElogo-white.svg"
+                                height="100px"
+                                alt="Фонд содействия инновациям"
+                            />
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="">
+                            <img
+                                src="images/logos/ARClogo.svg"
+                                height="100px"
+                                alt="Фонд содействия инновациям"
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                <!--Защита прав-->
+                <div class="row color2">
+                    <p class="text-center">
+                        &copy;Все права защищены
+                        МИП&nbsp;ООО&nbsp;&laquo;ГЕККОН&raquo;
+                        <br />
+                        г.Пермь, ул. Дзержинского&nbsp;50, 3&nbsp;этаж, офис 304
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!--Моадльные окна-->
+        <!--Модальное окно договора с фондом содействия инновациям-->
+        <div
+            class="modal fade"
+            id="contractModal"
+            tabindex="-1"
+            aria-labelledby="contractModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="contractModalLabel">
+                            Создано при поддержке фонда содействия инновациям
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="https://fasie.ru/">
+                            <img
+                                src="images/logos/FASIElogo.svg"
+                                alt="Логотип фонда содействия инновациям"
+                                class="img-fluid"
+                            />
+                        </a>
+                        <p>
+                            Проект реализован при поддержке Фонда содействиях
+                            инноваций (договор #####/#######1)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно формы -->
+        <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                            Заказать звонок
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Фамилия и имя</span>
+                            <input
+                                type="text"
+                                id="formLastName"
+                                aria-label="Фамилия"
+                                class="form-control"
+                                placeholder="Белобородов"
+                            />
+                            <input
+                                type="text"
+                                id="formFirstName"
+                                aria-label="Имя"
+                                class="form-control"
+                                placeholder="Филипп"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="formEmail" class="form-label"
+                                >Адрес электронной почты</label
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="formEmail"
+                                placeholder="name@example.com"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formTelephone" class="form-label"
+                                >Номер телефона</label
+                            >
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="formTelephone"
+                                placeholder="8-900-000-00-00"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="formComment" class="form-label"
+                                >Комментарий по желанию</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="formComment"
+                                rows="3"
+                                placeholder="Начните вводить текст..."
+                            ></textarea>
+                        </div>
+                        <div class="form-check mb-5">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkAgree"
+                            />
+                            <label class="form-check-label" for="checkAgree">
+                                Отправляя данную форму я даю согласие на
+                                обработку персональных данный в соответсвии с
+                                <a href=""
+                                    >Политикой обработки персональных данных</a
+                                >
+                            </label>
+                        </div>
+                        <div
+                            style="height: 100px"
+                            id="captcha-container"
+                            class="smart-captcha"
+                            data-sitekey="ysc1_DOPExholgrJ506I6n0zg6iY1tlLQHDgPCpYc9qNm4c058cfb"
+                        ></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Закрыть
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Получить ответ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Скрипты-->
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

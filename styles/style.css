@@ -1,0 +1,178 @@
+:root {
+    --color_header: var(--bs-gray-900);
+    --color_paragraph: var(--bs-gray-600);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+footer,
+section {
+    padding: 100px 0;
+}
+
+footer {
+    background-color: var(--bs-dark);
+    padding-bottom: 10px;
+}
+
+.fasie_btn {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fasie_btn:hover {
+    transform: scale(0.95);
+}
+/* Описание */
+.description {
+    text-align: justify;
+}
+
+/* Преимущества */
+.featurette {
+    margin-bottom: 2rem;
+}
+.featurette-heading {
+    letter-spacing: -0.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: var(--bs-gray-700);
+    display: flex;
+    margin: 15px auto 30px;
+}
+
+/* Для кого техническое решение */
+
+.forwhom h5 {
+    padding: 50px;
+    border: 3px solid var(--color_header);
+}
+
+.btn-forwhom {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    color: var(--bs-white);
+    background-color: var(--color_header);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-forwhom:hover {
+    color: var(--bs-white);
+    opacity: 0.9;
+}
+
+/* Команда проекта */
+.teammate {
+    margin: 20px auto;
+}
+.teammate a {
+    text-decoration: none;
+}
+
+.teammate ul {
+    list-style: none;
+    padding: 0;
+}
+
+.teammate li:first-child {
+    margin-bottom: 10px;
+}
+
+/* Контакты */
+footer li {
+    color: var(--bs-white);
+    list-style: none;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+footer li a {
+    text-decoration: none;
+    display: block;
+    color: var(--bs-white);
+    transition: 0.2s;
+}
+
+footer li a:hover {
+    color: var(--bs-gray-600);
+}
+
+/* Галерея */
+
+.gal-item {
+    overflow: hidden;
+    padding: 8px;
+}
+.gal-item .box {
+    height: 100%;
+    overflow: hidden;
+}
+.box img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Цвет */
+
+.color1 {
+    color: var(--color_header);
+}
+
+.color2 {
+    color: var(--color_paragraph);
+}
+
+.bg1 {
+    background-color: var(--color_header);
+}
+
+.bg2 {
+    background-color: var(--color_paragraph);
+}
+
+.logo-fasie {
+    position: relative;
+    top: 20px;
+}
