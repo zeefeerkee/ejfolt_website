@@ -3,17 +3,6 @@
     --color_paragraph: var(--bs-gray-600);
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-
-footer {
-    background-color: var(--bs-dark);
-    padding-bottom: 10px;
-}
-
 .fasie_btn {
     cursor: pointer;
     transition: 0.3s;
@@ -55,7 +44,7 @@ footer {
 
 .btn-forwhom:hover {
     color: var(--bs-white);
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /* Команда проекта */
@@ -75,39 +64,27 @@ footer {
     margin-bottom: 10px;
 }
 
+footer {
+    background-color: var(--bs-dark);
+    padding-bottom: 10px;
+}
+
 /* Контакты */
 footer li {
     color: var(--bs-white);
     list-style: none;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 footer li a {
     text-decoration: none;
     display: block;
-    color: var(--bs-white);
+    color: var(--bs-gray-600);
     transition: 0.2s;
 }
 
 footer li a:hover {
-    color: var(--bs-gray-600);
-}
-
-/* Галерея */
-
-.gal-item {
-    overflow: hidden;
-    padding: 8px;
-}
-.gal-item .box {
-    height: 100%;
-    overflow: hidden;
-}
-.box img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
+    color: var(--bs-white);
 }
 
 /* Цвет */

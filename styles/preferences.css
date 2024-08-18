@@ -6,6 +6,10 @@
     letter-spacing: -0.05rem;
 }
 
+.featurette hr {
+    visibility: visible;
+}
+
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
@@ -14,6 +18,9 @@
 @media (min-width: 40em) {
     .featurette-heading {
         font-size: 50px;
+    }
+    .featurette hr {
+        visibility: visible;
     }
 }
 
@@ -29,10 +36,16 @@
         -moz-user-select: none;
         user-select: none;
     }
+    .featurette hr {
+        visibility: hidden;
+    }
 }
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
+    }
+    .featurette hr {
+        visibility: hidden;
     }
 }

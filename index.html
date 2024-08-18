@@ -12,8 +12,9 @@
         <!--Дополнительные стили подключать после bootstrap-->
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="styles/preferences.css" />
-        <link rel="stylesheet" href="styles/product.css" />
-        <link rel="stylesheet" href="styles/magnetic-wheel.css" />
+        <link rel="stylesheet" href="styles/content-loader.css" />
+        <link rel="stylesheet" href="styles/scroll-top-button.css" />
+        <link rel="stylesheet" href="styles/gallery.css" />
         <link
             rel="shortcut icon"
             href="images/logos/EJFOLTlogo-black.svg"
@@ -23,11 +24,15 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/css/project-1.css"
+        />
 
         <title>ШВП-Манипулятор</title>
     </head>
     <body>
-        <header>
+        <header id="header">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#product">
@@ -88,8 +93,10 @@
 
         <!--О проекте-->
         <section class="bg-white" id="product">
-            <div class="position-relative overflow-hidden text-center bg-light">
-                <div class="col-md-8 p-lg-5 mx-auto my-5">
+            <div
+                class="position-relative overflow-hidden text-center bg-light pb-5"
+            >
+                <div class="col-md-8 p-lg-1 mx-auto my-1">
                     <h1 class="display-4 fw-normal p-5">Манипулятор ШВП</h1>
                     <img
                         src="images/main-image/manipulator.png"
@@ -117,7 +124,7 @@
         <!--Преимущества-->
         <section class="bg-white p-5" id="preferences">
             <div class="container">
-                <div class="row featurette">
+                <div class="row featurette content-loader">
                     <div class="col-md-7">
                         <h2 class="featurette-heading fw-normal lh-1">
                             Позиционирование,
@@ -143,8 +150,9 @@
                     </div>
                 </div>
 
-                <div class="row featurette">
+                <div class="row featurette content-loader">
                     <div class="col-md-7 order-md-2">
+                        <hr />
                         <h2 class="featurette-heading fw-normal lh-1">
                             Высокая нагрузочная способность,
                             <span class="text-muted"
@@ -169,8 +177,9 @@
                     </div>
                 </div>
 
-                <div class="row featurette">
+                <div class="row featurette content-loader">
                     <div class="col-md-7">
+                        <hr />
                         <h2 class="featurette-heading fw-normal lh-1">
                             Долговечность и надёжность,
                             <span class="text-muted"
@@ -197,31 +206,31 @@
         </section>
 
         <!--Для кого это техническое решение-->
-        <section class="forwhom bg-light">
+        <section class="forwhom bg-light py-5 pb-5">
             <div class="container">
-                <h2 class="text-center color2 mb-5">
+                <h2 class="display-4 fw-normal mb-4 text-center">
                     Для кого это техническое решение?
                 </h2>
-                <div class="row mb-5">
+                <div class="row mb-5 content-loader">
                     <div class="col-md-6">
-                        <h5 class="text-center">
-                            Резервуары и&nbsp;трубопроводы нефтегазовых компаний
+                        <h5 class="text-center fw-normal">
+                            Автоматизированные производственные линии
                         </h5>
                     </div>
-                    <div class="col-md-6">
-                        <h5 class="text-center">
-                            Теплообменные аппараты и&nbsp;хранилища химических
-                            предприятий.
+                    <div class="col-md-6 content-loader">
+                        <h5 class="text-center fw-normal">
+                            Системы сборки и упаковки
                         </h5>
                     </div>
-                    <div class="col-md-6">
-                        <h5 class="text-center">
-                            Машины и&nbsp;аппараты теплоснабжающих компаний.
+                    <div class="col-md-6 content-loader">
+                        <h5 class="text-center fw-normal">
+                            Лаборатории и исследовательские центры
                         </h5>
                     </div>
-                    <div class="col-md-6">
-                        <h5 class="text-center">
-                            Аппараты и&nbsp;устройства атомной энергетики.
+                    <div class="col-md-6 content-loader">
+                        <h5 class="text-center fw-normal">
+                            Оборудование для микрообработки и точного
+                            позиционирования
                         </h5>
                     </div>
                 </div>
@@ -229,56 +238,181 @@
                     <div class="col-12">
                         <a
                             href=""
-                            class="btn-lg text-uppercase btn-forwhom text-center"
+                            class="btn-lg text-uppercase btn-forwhom text-center rounded"
                             data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop"
-                            >Узнать&nbsp;больше</a
                         >
+                            Узнать&nbsp;больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Галерея-->
+        <section class="bg-white py-3 py-md-5">
+            <h2 class="display-4 fw-normal mb-5 text-center">Решения</h2>
+            <div class="container overflow-hidden content-loader">
+                <div class="row gy-3 gy-md-2 bsb-project-1-grid">
+                    <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                        <figure
+                            class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                        >
+                            <a href="#!">
+                                <img
+                                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                                    src="images/main-image/manipulator.png"
+                                    alt="Реальная модель"
+                                />
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">
+                                    Реальная модель
+                                </h3>
+                                <div class="text-white bsb-hover-fadeInRight">
+                                    Сборка
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6 bsb-project-1-item">
+                        <figure
+                            class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                        >
+                            <a href="#!">
+                                <img
+                                    class="img-fluid bsb-scale bsb-hover-scale-up"
+                                    src="images/main-image/manipulator.png"
+                                    alt="Большая модель"
+                                />
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInUp">
+                                    Большая модель
+                                </h3>
+                                <div class="text-white bsb-hover-fadeInDown">
+                                    Сборка
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                        <figure
+                            class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                        >
+                            <a href="#!">
+                                <img
+                                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                                    src="images/preferences/preferences-2.png"
+                                    alt="ШВП"
+                                />
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">
+                                    ШВП
+                                </h3>
+                                <div class="text-white bsb-hover-fadeInRight">
+                                    Рендер
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                        <figure
+                            class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                        >
+                            <a href="#!">
+                                <img
+                                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                                    src="images/preferences/preferences-1.png"
+                                    alt="Шаговый мотор"
+                                />
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">
+                                    Шаговый мотор
+                                </h3>
+                                <div class="text-white bsb-hover-fadeInRight">
+                                    Рендер
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                        <figure
+                            class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                        >
+                            <a href="#!">
+                                <img
+                                    class="img-fluid bsb-scale-up bsb-hover-scale"
+                                    src="images/preferences/preferences-3.png"
+                                    alt="Конструкция"
+                                />
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">
+                                    Конструкция
+                                </h3>
+                                <div class="text-white bsb-hover-fadeInRight">
+                                    Рендер
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </section>
 
         <!--Команда проекта-->
-        <section class="team bg-light" id="team">
+        <section class="team bg-light py-5" id="team">
             <div class="container">
                 <div class="row">
-                    <h2 class="color2 mb-5 text-center">Команда проекта</h2>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card teammate" style="width: 18rem">
+                    <h2 class="display-4 fw-normal mb-4 text-center">
+                        Команда проекта
+                    </h2>
+                    <div class="col-sm-12 col-xl-6">
+                        <div
+                            class="card border-light w-75 teammate content-loader"
+                        >
                             <img
-                                src="https://sun6-20.userapi.com/s/v1/ig2/kdmChLwZyXjVZgNwvHqo-uoNltTmYEuyai3TaSXXxNZNPi3hPQohyJlnlbXgV7rPaCv3Is8SBCY18-c30XQbbqeH.jpg?quality=95&crop=1051,1059,479,479&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&ava=1&u=Sj5_jCXiMw09uQJ9vROWwoag0npd8sbaLZA6MlviDeY&cs=200x200"
+                                src="images/team/teammate-2.png"
                                 class="card-img-top"
-                                alt="Фото Максима Шестакова"
+                                alt="Фото Евгения Тонкова"
                             />
                             <div class="card-body">
-                                <h5 class="mb-0">Шестаков Максим</h5>
+                                <h5 class="mb-0">Тонков Евгений</h5>
                                 <ul>
                                     <li>
                                         <i>Директор</i>
                                     </li>
                                     <li>
-                                        <a href="mailto:belobov.filipp@zeefy.ru"
+                                        <a href="mailto:info@ejfolt.ru"
                                             ><i
                                                 class="bi bi-envelope-at-fill"
                                             ></i
-                                            >&nbsp;belobov.filipp@zeefy.ru</a
+                                            >&nbsp;info@ejfolt.ru</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="https://t.me/zeefeerkee"
-                                            ><i class="bi bi-telegram"></i
-                                            >&nbsp;@zeefeerkee</a
+                                        <a href="tel:+79222085919"
+                                            ><i class="bi bi-telephone-fill"></i
+                                            >&nbsp;+7 (922) 208-59-19</a
                                         >
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card teammate" style="width: 18rem">
+                    <div class="col-sm-12 col-xl-6">
+                        <div
+                            class="card border-light teammate w-75 content-loader"
+                        >
                             <img
-                                src="https://sun9-5.userapi.com/impg/Dsm5Ni1LM7VtEt3mIGga3X6xIaIQCXVp1IOZOQ/qgk_PyMUJu8.jpg?size=1000x1000&quality=96&sign=8b36eaee52b31d0cb9708915da76c9f6&type=album"
+                                src="images/team/teammate-1.png"
                                 class="card-img-top"
                                 alt="Фото Белобородова Филиппа>"
                             />
@@ -306,173 +440,77 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card teammate" style="width: 18rem">
-                            <img
-                                src="https://sun6-21.userapi.com/s/v1/if1/uxKgVz3CDJxbo8bLIvK8_fBTRyKN2vG5v9LRFBza9XaLKohCtQTgMBxdc_Oc1FuTT0p_zqoq.jpg?size=100x100&quality=96&crop=529,5,550,550&ava=1"
-                                class="card-img-top"
-                                alt="Фото Гилязетдинова Даниила"
-                            />
-                            <div class="card-body">
-                                <h5 class="mb-0">Гилязетдинов Даниил</h5>
-                                <ul>
-                                    <li>
-                                        <i>Инженер-конструктор</i>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:belobov.filipp@zeefy.ru"
-                                            ><i
-                                                class="bi bi-envelope-at-fill"
-                                            ></i
-                                            >&nbsp;belobov.filipp@zeefy.ru</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="https://t.me/zeefeerkee"
-                                            ><i class="bi bi-telegram"></i
-                                            >&nbsp;@zeefeerkee</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card teammate" style="width: 18rem">
-                            <img
-                                src="https://pp.userapi.com/dfvmQ4fDCgEfMVVLlOKBUsaUdh7QZww8ME4IHg/2G-nzM7_pH4.png"
-                                class="card-img-top"
-                                alt="Фото Гумарова Эльдара"
-                            />
-                            <div class="card-body">
-                                <h5 class="mb-0">Эльдаров Гумар</h5>
-                                <ul>
-                                    <li>
-                                        <i>Инженер-технолог</i>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:belobov.filipp@zeefy.ru"
-                                            ><i
-                                                class="bi bi-envelope-at-fill"
-                                            ></i
-                                            >&nbsp;belobov.filipp@zeefy.ru</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="https://t.me/zeefeerkee"
-                                            ><i class="bi bi-telegram"></i
-                                            >&nbsp;@zeefeerkee</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!--Галерея-->
-
         <footer id="footer">
-            <div class="container">
-                <!--Контакты-->
-                <div class="row mb-5 contacts">
-                    <div class="col-xl-6 col-md-12 text-cente">
-                        <h2 class="text-center color2 mb-4 text-uppercase">
-                            к о н т а к т ы
-                        </h2>
-                        <ul>
-                            <li>
-                                <a href="tel:+796117577490"
-                                    >+7 961 175 774 90</a
-                                >
-                                <a href="mailto:info@gekkon.ru"
-                                    >info@gekkon.ru</a
-                                >
-                            </li>
-                            <li>
-                                <div class="adress">
-                                    <p><strong>Россия</strong></p>
-                                    <p>
-                                        Пермский край, город Пермь, улица
-                                        Дзержинского 50, офис 302
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-6 col-md-12 text-center">
-                        <!--Карта-->
-                        <div class="map">
-                            <iframe
-                                class="rounded"
-                                alt="Карта"
-                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A306b10e4aa385d1eaba272ca023750e9b2fa1b9e7b06ec3872c1540137ffa118&amp;source=constructor"
-                                width="380"
-                                height="320"
-                                frameborder="0"
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row donation">
-                    <div class="col text-center">
-                        <iframe
-                            src="https://yoomoney.ru/quickpay/fundraise/button?billNumber=147LG0HTHBO.240726&"
-                            width="330"
-                            height="50"
-                            frameborder="0"
-                            allowtransparency="true"
-                            scrolling="no"
-                        ></iframe>
-                    </div>
-                </div>
-
-                <!--Партнёры-->
-                <div class="row partners mb-5">
-                    <div class="col text-center">
-                        <a href="">
-                            <img
-                                src="images/logos/main-icon-white.svg"
-                                height="100px"
-                                alt="Фонд содействия инновациям"
-                            />
-                        </a>
-                    </div>
-                    <div class="col text-center logo-fasie">
-                        <a href="">
-                            <img
-                                src="images/logos/FASIElogo-white.svg"
-                                height="100px"
-                                alt="Фонд содействия инновациям"
-                            />
-                        </a>
+            <div class="container p-5">
+                <div class="row mb-5 text-center">
+                    <div class="col">
+                        <nav class="navbar navbar-dark bg-dark">
+                            <ul class="nav text-end">
+                                <li class="me-3">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop"
+                                        >Узнать больше</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="col text-center">
-                        <a href="">
-                            <img
-                                src="images/logos/ARClogo.svg"
-                                height="100px"
-                                alt="Фонд содействия инновациям"
-                            />
-                        </a>
+                        <img
+                            src="images/logos/FASIElogo-white.svg"
+                            alt=""
+                            width="175px"
+                            data-bs-toggle="modal"
+                            data-bs-target="#contractModal"
+                        />
+                    </div>
+                    <div class="col">
+                        <nav class="navbar navbar-dark bg-dark">
+                            <ul class="nav text-end">
+                                <li class="me-3">
+                                    <a href="mailto:info@ejfolt.ru"
+                                        >info@ejfolt.ru</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="tel:+79222085919"
+                                        >+7 (922) 208-59-19</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
 
                 <!--Защита прав-->
                 <div class="row color2">
+                    <hr />
                     <p class="text-center">
-                        &copy;Все права защищены
-                        МИП&nbsp;ООО&nbsp;&laquo;ГЕККОН&raquo;
+                        &copy; МИП ООО &laquo;ЭЙФОЛТ&raquo;
                         <br />
-                        г.Пермь, ул. Дзержинского&nbsp;50, 3&nbsp;этаж, офис 304
+                        Пермский край, Кунгурский р-н, г&nbsp;Кунгур,
+                        Прикамская&nbsp;ул, д.&nbsp;20, кв.&nbsp;1
                     </p>
                 </div>
             </div>
         </footer>
 
+        <button
+            id="scrollTopBtn"
+            class="scroll-top-btn"
+            onclick="scrollToTop()"
+        >
+            <i class="bi bi-chevron-up"></i>
+        </button>
         <!--Моадльные окна-->
         <!--Модальное окно договора с фондом содействия инновациям-->
         <div
@@ -513,6 +551,7 @@
         </div>
 
         <!-- Модальное окно формы -->
+        <!-- HTML -->
         <div
             class="modal fade"
             id="staticBackdrop"
@@ -536,78 +575,106 @@
                         ></button>
                     </div>
                     <div class="modal-body">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Фамилия и имя</span>
+                        <form id="contactForm">
+                            <label for="validationCustom01" class="form-label"
+                                >Имя</label
+                            >
                             <input
                                 type="text"
-                                id="formLastName"
-                                aria-label="Фамилия"
                                 class="form-control"
-                                placeholder="Белобородов"
-                            />
-                            <input
-                                type="text"
-                                id="formFirstName"
-                                aria-label="Имя"
-                                class="form-control"
+                                id="validationCustom01"
                                 placeholder="Филипп"
+                                required
                             />
-                        </div>
-                        <div class="mb-3">
-                            <label for="formEmail" class="form-label"
-                                >Адрес электронной почты</label
-                            >
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="formEmail"
-                                placeholder="name@example.com"
-                            />
-                        </div>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите ваше имя.
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="formTelephone" class="form-label"
-                                >Номер телефона</label
+                            <label for="validationCustom02" class="form-label"
+                                >Фамилия</label
                             >
                             <input
-                                type="tel"
+                                type="text"
                                 class="form-control"
-                                id="formTelephone"
-                                placeholder="8-900-000-00-00"
+                                id="validationCustom02"
+                                placeholder="Белобородов"
+                                required
                             />
-                        </div>
-                        <div class="mb-3">
-                            <label for="formComment" class="form-label"
-                                >Комментарий по желанию</label
-                            >
-                            <textarea
-                                class="form-control"
-                                id="formComment"
-                                rows="3"
-                                placeholder="Начните вводить текст..."
-                            ></textarea>
-                        </div>
-                        <div class="form-check mb-5">
-                            <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="checkAgree"
-                            />
-                            <label class="form-check-label" for="checkAgree">
-                                Отправляя данную форму я даю согласие на
-                                обработку персональных данный в соответсвии с
-                                <a href="privacy.html"
-                                    >Политикой обработки персональных данных</a
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите вашу фамилию.
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formEmail" class="form-label"
+                                    >Адрес электронной почты</label
                                 >
-                            </label>
-                        </div>
-                        <div
-                            style="height: 100px"
-                            id="captcha-container"
-                            class="smart-captcha"
-                            data-sitekey="ysc1_DOPExholgrJ506I6n0zg6iY1tlLQHDgPCpYc9qNm4c058cfb"
-                        ></div>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="formEmail"
+                                    placeholder="name@example.com"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите действительный адрес
+                                    электронной почты.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formTelephone" class="form-label"
+                                    >Номер телефона</label
+                                >
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="formTelephone"
+                                    placeholder="8-900-000-00-00"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите ваш номер телефона.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formComment" class="form-label"
+                                    >Комментарий по желанию</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    id="formComment"
+                                    rows="3"
+                                    placeholder="Начните вводить текст..."
+                                ></textarea>
+                            </div>
+
+                            <div class="form-check mb-5">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="checkAgree"
+                                    required
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="checkAgree"
+                                >
+                                    Отправляя данную форму я даю согласие на
+                                    обработку персональных данных в соответствии
+                                    с
+                                    <a href="privacy.html"
+                                        >Политикой обработки персональных
+                                        данных</a
+                                    >
+                                </label>
+                                <div class="invalid-feedback">
+                                    Необходимо согласие на обработку
+                                    персональных данных.
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button
@@ -620,8 +687,8 @@
                         <button
                             type="button"
                             class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
+                            id="submitBtn"
+                            disabled
                         >
                             Получить ответ
                         </button>
@@ -631,6 +698,16 @@
         </div>
 
         <!--Скрипты-->
+
         <script src="scripts/bootstrap.bundle.min.js"></script>
+        <script src="scripts/content.loader.js"></script>
+        <script src="scripts/scroll.top.btn.js"></script>
+        <script src="scripts/feedback.form.js"></script>
+        <script src="scripts/jopa.form.js"></script>
+        <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/controller/project-1.js"></script>
     </body>
 </html>
